@@ -161,9 +161,9 @@ INSERT INTO villes (ID_PAYS, nom_VILLE, CODE_POSTAL)--ok
 -- drop proc procInsertUser;
 -- select * from users
 
-CREATE PROCEDURE procNewVente @idVendeur int, @idLivre  int, @prix  money, @etat varchar(20) AS
+CREATE PROCEDURE procNewVente @idVendeur int, @idLivre  int, @prix  money, @etat varchar(20), @dispo varchar(30) AS
 	insert into ventes (id_acheteur, id_livre, id_vendeur, prix, etape_vente, etat_livre)
-	values (null, @idLivre, @idVendeur, @prix, 'disponible', @etat);
+	values (null, @idLivre, @idVendeur, @prix, @dispo, @etat);
  
 -- EXECUTE procNewVente @idVendeur=3, @idLivre=8, @prix=9.99, @etat='comme neuf';
 -- EXECUTE procNewVente @idVendeur=1, @livre='carbon modifié', @prix=99, @etat='bon';

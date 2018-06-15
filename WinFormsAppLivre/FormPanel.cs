@@ -64,5 +64,11 @@ namespace WinFormsAppLivre
             updateUser.ShowDialog();
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormCollections Collections = new FormCollections();
+            Collections.ShowDialog();
+        }
     }
 }

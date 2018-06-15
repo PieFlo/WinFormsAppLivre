@@ -34,6 +34,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.livresBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pROJETDataSetLivres = new WinFormsAppLivre.PROJETDataSetLivres();
             this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -41,12 +43,11 @@
             this.btnReturn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.pROJETDataSetLivres = new WinFormsAppLivre.PROJETDataSetLivres();
-            this.livresBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.livresTableAdapter1 = new WinFormsAppLivre.PROJETDataSetLivresTableAdapters.LivresTableAdapter();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pROJETDataSetLivres)).BeginInit();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.livresBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pROJETDataSetLivres)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -97,6 +98,16 @@
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 19;
             this.comboBox1.ValueMember = "id_livre";
+            // 
+            // livresBindingSource
+            // 
+            this.livresBindingSource.DataMember = "Livres";
+            this.livresBindingSource.DataSource = this.pROJETDataSetLivres;
+            // 
+            // pROJETDataSetLivres
+            // 
+            this.pROJETDataSetLivres.DataSetName = "PROJETDataSetLivres";
+            this.pROJETDataSetLivres.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button2
             // 
@@ -150,6 +161,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.comboBoxEtat);
@@ -175,19 +187,22 @@
             this.label5.TabIndex = 36;
             this.label5.Text = "Si votre livre n\'est pas listé, ajoutez le.";
             // 
-            // pROJETDataSetLivres
-            // 
-            this.pROJETDataSetLivres.DataSetName = "PROJETDataSetLivres";
-            this.pROJETDataSetLivres.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // livresBindingSource
-            // 
-            this.livresBindingSource.DataMember = "Livres";
-            this.livresBindingSource.DataSource = this.pROJETDataSetLivres;
-            // 
             // livresTableAdapter1
             // 
             this.livresTableAdapter1.ClearBeforeFill = true;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.livresBindingSource, "id_livre", true));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "disponible",
+            "indisponible"});
+            this.comboBox2.Location = new System.Drawing.Point(283, 141);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.TabIndex = 34;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // FormVente
             // 
@@ -200,10 +215,10 @@
             this.Name = "FormVente";
             this.Text = "Vendre un livre";
             this.Load += new System.EventHandler(this.FormVente_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.livresBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pROJETDataSetLivres)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pROJETDataSetLivres)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.livresBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,5 +243,6 @@
         private PROJETDataSetLivres pROJETDataSetLivres;
         private System.Windows.Forms.BindingSource livresBindingSource;
         private PROJETDataSetLivresTableAdapters.LivresTableAdapter livresTableAdapter1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

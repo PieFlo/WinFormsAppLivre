@@ -47,8 +47,9 @@ namespace WinFormsAppLivre
                 sqlCmd.Parameters.AddWithValue("@idLivre", comboBox1.SelectedValue);
                 sqlCmd.Parameters.AddWithValue("@prix", textBox1.Text);
                 sqlCmd.Parameters.AddWithValue("@etat", comboBoxEtat.SelectedItem);
+                sqlCmd.Parameters.AddWithValue("@dispo", comboBox2.SelectedItem);
 
-              
+
                 int nbRecords = sqlCmd.ExecuteNonQuery();
                 
                 if (nbRecords > 0)
@@ -71,6 +72,11 @@ namespace WinFormsAppLivre
         }
 
         private void comboBoxEtat_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
