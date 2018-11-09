@@ -26,7 +26,7 @@ namespace WinFormsAppLivre
 
         private void FormCollections_Load(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=192.168.111.10;Initial Catalog=PROJET;Persist Security Info=True;User ID=sa;Password=abcd4ABCD;");
+            SqlConnection con = new SqlConnection(LoginInfo.connectionString);
             SqlDataAdapter sda = new SqlDataAdapter(@"select titre, numero_tome from livres l, ventes v where v.id_livre = l.id_livre and id_vendeur = " + LoginInfo.idUser+";", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);

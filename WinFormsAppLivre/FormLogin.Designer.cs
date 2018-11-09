@@ -118,6 +118,7 @@
             this.Controls.Add(this.txtLogin);
             this.Name = "FormLogin";
             this.Text = "Connexion";
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

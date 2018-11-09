@@ -14,7 +14,7 @@ namespace WinFormsAppLivre
     public partial class FormLogin : Form
     {
         private static FormLogin _login;
-        string connectionString = @"Data Source=192.168.111.10;Initial Catalog=PROJET;Persist Security Info=True;User ID=sa;Password=abcd4ABCD;";
+        //string connectionString = @"Data Source=192.168.111.10;Initial Catalog=PROJET;Persist Security Info=True;User ID=sa;Password=abcd4ABCD;";
         public FormLogin()
         {
             InitializeComponent();
@@ -34,7 +34,7 @@ namespace WinFormsAppLivre
                 MessageBox.Show("Remplissez tous les champs svp");
             else
             {
-                using (SqlConnection sqlCon = new SqlConnection(connectionString))
+                using (SqlConnection sqlCon = new SqlConnection(LoginInfo.connectionString))
                 {
                     sqlCon.Open();
                     using (SqlDataAdapter sqlDA = new SqlDataAdapter("SELECT * FROM Users WHERE username='" + txtLogin.Text + "' OR email='" + txtLogin.Text + "' AND mdp='" + txtPwd.Text + "';", sqlCon))
@@ -89,6 +89,11 @@ namespace WinFormsAppLivre
         void Clear()
         {
             txtLogin.Text = txtPwd.Text = "";
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

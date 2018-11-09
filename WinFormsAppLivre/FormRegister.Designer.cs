@@ -139,6 +139,7 @@
             this.Controls.Add(this.txtUsername);
             this.Name = "FormRegister";
             this.Text = "Inscription";
+            this.Load += new System.EventHandler(this.FormRegister_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

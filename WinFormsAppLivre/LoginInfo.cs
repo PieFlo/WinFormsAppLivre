@@ -19,6 +19,7 @@ namespace WinFormsAppLivre
         public static string adresse;
         public static int porteMonnais;
         public static bool isAdmin;
-        public static string connectionString = @"Data Source=192.168.111.10;Initial Catalog=PROJET;Persist Security Info=True;User ID=sa;Password=abcd4ABCD;";
+        //public static string connectionString = @"Data Source=192.168.111.10;Initial Catalog=PROJET;Persist Security Info=True;User ID=sa;Password=abcd4ABCD;";
+        public static string connectionString = @"Data Source=sqlserver.montpellier.epsi.fr,4433;Initial Catalog=PROJET;Persist Security Info=True;User ID=p.poujol;Password=azerty;";
     }
 }

@@ -30,7 +30,7 @@ namespace WinFormsAppLivre
 
         private void FormListVentes_Load(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=192.168.111.10;Initial Catalog=PROJET;Persist Security Info=True;User ID=sa;Password=abcd4ABCD;");
+            SqlConnection con = new SqlConnection(LoginInfo.connectionString);
             SqlDataAdapter sda = new SqlDataAdapter(@"  SELECT titre, prix, etat_livre, username, id_vente, l.id_livre FROM Ventes v, Livres l, Users u 
                                                         WHERE v.id_livre = l.id_livre AND v.id_vendeur = u.id_user 
                                                         AND etape_vente = 'disponible' AND id_vendeur != " + LoginInfo.idUser + ";", con);

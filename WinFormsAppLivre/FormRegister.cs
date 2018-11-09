@@ -14,7 +14,7 @@ namespace WinFormsAppLivre
 {
     public partial class FormRegister : Form
     {
-        string connectionString = @"Data Source=192.168.111.10;Initial Catalog=PROJET;Persist Security Info=True;User ID=sa;Password=abcd4ABCD;";
+        //string connectionString = @"Data Source=192.168.111.10;Initial Catalog=PROJET;Persist Security Info=True;User ID=sa;Password=abcd4ABCD;";
         public FormRegister()
         {
             InitializeComponent();
@@ -28,7 +28,7 @@ namespace WinFormsAppLivre
                 MessageBox.Show("Les mots de passe ne correspondent pas");
             else
             {
-                using (SqlConnection sqlCon = new SqlConnection(connectionString))
+                using (SqlConnection sqlCon = new SqlConnection(LoginInfo.connectionString))
                 {
                     sqlCon.Open();
                     SqlCommand sqlCmd = new SqlCommand("procInsertUser", sqlCon);
@@ -55,6 +55,11 @@ namespace WinFormsAppLivre
         void Clear()
         {
             txtUsername.Text = txtEmail.Text = txtPwd.Text = txtConfirmPwd.Text = "";
+        }
+
+        private void FormRegister_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
