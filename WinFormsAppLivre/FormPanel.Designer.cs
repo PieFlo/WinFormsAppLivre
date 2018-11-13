@@ -41,17 +41,19 @@
             // labelWlcm
             // 
             this.labelWlcm.AutoSize = true;
-            this.labelWlcm.Location = new System.Drawing.Point(213, 89);
+            this.labelWlcm.Location = new System.Drawing.Point(160, 72);
+            this.labelWlcm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelWlcm.Name = "labelWlcm";
-            this.labelWlcm.Size = new System.Drawing.Size(75, 17);
+            this.labelWlcm.Size = new System.Drawing.Size(58, 13);
             this.labelWlcm.TabIndex = 0;
             this.labelWlcm.Text = "Bienvenue";
             // 
             // btnBuy
             // 
-            this.btnBuy.Location = new System.Drawing.Point(69, 162);
+            this.btnBuy.Location = new System.Drawing.Point(52, 132);
+            this.btnBuy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBuy.Name = "btnBuy";
-            this.btnBuy.Size = new System.Drawing.Size(129, 59);
+            this.btnBuy.Size = new System.Drawing.Size(97, 48);
             this.btnBuy.TabIndex = 1;
             this.btnBuy.Text = "Acheter un livre";
             this.btnBuy.UseVisualStyleBackColor = true;
@@ -59,9 +61,10 @@
             // 
             // btnSell
             // 
-            this.btnSell.Location = new System.Drawing.Point(364, 162);
+            this.btnSell.Location = new System.Drawing.Point(273, 132);
+            this.btnSell.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSell.Name = "btnSell";
-            this.btnSell.Size = new System.Drawing.Size(129, 59);
+            this.btnSell.Size = new System.Drawing.Size(97, 48);
             this.btnSell.TabIndex = 2;
             this.btnSell.Text = "Vendre un livre";
             this.btnSell.UseVisualStyleBackColor = true;
@@ -69,9 +72,10 @@
             // 
             // btnEditUser
             // 
-            this.btnEditUser.Location = new System.Drawing.Point(216, 280);
+            this.btnEditUser.Location = new System.Drawing.Point(162, 228);
+            this.btnEditUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEditUser.Name = "btnEditUser";
-            this.btnEditUser.Size = new System.Drawing.Size(129, 59);
+            this.btnEditUser.Size = new System.Drawing.Size(97, 48);
             this.btnEditUser.TabIndex = 3;
             this.btnEditUser.Text = "Modifier ses informations";
             this.btnEditUser.UseVisualStyleBackColor = true;
@@ -79,18 +83,21 @@
             // 
             // btnDelUser
             // 
-            this.btnDelUser.Location = new System.Drawing.Point(364, 280);
+            this.btnDelUser.Location = new System.Drawing.Point(273, 228);
+            this.btnDelUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDelUser.Name = "btnDelUser";
-            this.btnDelUser.Size = new System.Drawing.Size(129, 59);
+            this.btnDelUser.Size = new System.Drawing.Size(97, 48);
             this.btnDelUser.TabIndex = 4;
-            this.btnDelUser.Text = "Se deinscrire";
+            this.btnDelUser.Text = "Supprimer mon Compte";
             this.btnDelUser.UseVisualStyleBackColor = true;
+            this.btnDelUser.Click += new System.EventHandler(this.btnDelUser_Click);
             // 
             // btnDeals
             // 
-            this.btnDeals.Location = new System.Drawing.Point(69, 280);
+            this.btnDeals.Location = new System.Drawing.Point(52, 228);
+            this.btnDeals.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDeals.Name = "btnDeals";
-            this.btnDeals.Size = new System.Drawing.Size(129, 59);
+            this.btnDeals.Size = new System.Drawing.Size(97, 48);
             this.btnDeals.TabIndex = 5;
             this.btnDeals.Text = "Mes deals";
             this.btnDeals.UseVisualStyleBackColor = true;
@@ -98,9 +105,10 @@
             // 
             // btnQuit
             // 
-            this.btnQuit.Location = new System.Drawing.Point(423, 11);
+            this.btnQuit.Location = new System.Drawing.Point(317, 9);
+            this.btnQuit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnQuit.Name = "btnQuit";
-            this.btnQuit.Size = new System.Drawing.Size(129, 59);
+            this.btnQuit.Size = new System.Drawing.Size(97, 48);
             this.btnQuit.TabIndex = 6;
             this.btnQuit.Text = "Quitter";
             this.btnQuit.UseVisualStyleBackColor = true;
@@ -108,9 +116,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(216, 162);
+            this.button1.Location = new System.Drawing.Point(162, 132);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 59);
+            this.button1.Size = new System.Drawing.Size(97, 48);
             this.button1.TabIndex = 7;
             this.button1.Text = "Ma collection";
             this.button1.UseVisualStyleBackColor = true;
@@ -118,9 +127,9 @@
             // 
             // FormPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(561, 372);
+            this.ClientSize = new System.Drawing.Size(421, 302);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.btnDeals);
@@ -129,6 +138,7 @@
             this.Controls.Add(this.btnSell);
             this.Controls.Add(this.btnBuy);
             this.Controls.Add(this.labelWlcm);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormPanel";
             this.Text = "Tableau de bord";
             this.Load += new System.EventHandler(this.FormPanel_Load);

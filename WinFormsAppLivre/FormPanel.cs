@@ -70,5 +70,13 @@ namespace WinFormsAppLivre
             FormCollections Collections = new FormCollections();
             Collections.ShowDialog();
         }
+
+        private void btnDelUser_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Etes-vous sur de vouloir supprimer votre compte");
+
+       
+
+        }
     }
 }
