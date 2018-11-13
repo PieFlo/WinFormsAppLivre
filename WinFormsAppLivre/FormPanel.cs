@@ -73,7 +73,7 @@ namespace WinFormsAppLivre
 
         private void btnDelUser_Click(object sender, EventArgs e)
         {
-            DialogResult res = MessageBox.Show("Etes-vous sur de vouloir supprimer votre compte");
+            DialogResult res = MessageBox.Show("Etes-vous sur de vouloir supprimer votre compte ?");
 
        
 
