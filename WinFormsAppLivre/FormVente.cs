@@ -14,10 +14,19 @@ namespace WinFormsAppLivre
 {
     public partial class FormVente : Form
     {
-        private FormVente _vente;
+        private static FormVente _vente;
         public FormVente()
         {
             InitializeComponent();
+        }
+        public static FormVente Vente
+        {
+            get
+            {
+                if (_vente == null || _vente.IsDisposed)
+                    _vente = new FormVente();
+                return _vente;
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -32,8 +41,11 @@ namespace WinFormsAppLivre
 
         private void FormVente_Load(object sender, EventArgs e)
         {
-            // TODO: cette ligne de code charge les données dans la table 'pROJETDataSetLivres.Livres'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.livresTableAdapter1.Fill(this.pROJETDataSetLivres.Livres);
+            // TODO: cette ligne de code charge les données dans la table 'pROJETDataSetLivreColl.Livres'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.livresTableAdapter.Fill(this.pROJETDataSetLivreColl.Livres);
+
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -77,6 +89,11 @@ namespace WinFormsAppLivre
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }

@@ -34,27 +34,29 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.livresBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pROJETDataSetLivres = new WinFormsAppLivre.PROJETDataSetLivres();
             this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBoxEtat = new System.Windows.Forms.ComboBox();
             this.btnReturn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.livresTableAdapter1 = new WinFormsAppLivre.PROJETDataSetLivresTableAdapters.LivresTableAdapter();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.livresBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pROJETDataSetLivres)).BeginInit();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pROJETDataSetLivreColl = new WinFormsAppLivre.PROJETDataSetLivreColl();
+            this.pROJETDataSetLivreCollBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.livresBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.livresTableAdapter = new WinFormsAppLivre.PROJETDataSetLivreCollTableAdapters.LivresTableAdapter();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pROJETDataSetLivreColl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pROJETDataSetLivreCollBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.livresBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(130, 174);
+            this.button1.Location = new System.Drawing.Point(78, 172);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 38);
+            this.button1.Size = new System.Drawing.Size(210, 38);
             this.button1.TabIndex = 17;
             this.button1.Text = "Soumettre la vente";
             this.button1.UseVisualStyleBackColor = true;
@@ -93,21 +95,11 @@
             this.comboBox1.DataSource = this.livresBindingSource;
             this.comboBox1.DisplayMember = "titre";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(130, 41);
+            this.comboBox1.Location = new System.Drawing.Point(78, 39);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.Size = new System.Drawing.Size(189, 24);
             this.comboBox1.TabIndex = 19;
             this.comboBox1.ValueMember = "id_livre";
-            // 
-            // livresBindingSource
-            // 
-            this.livresBindingSource.DataMember = "Livres";
-            this.livresBindingSource.DataSource = this.pROJETDataSetLivres;
-            // 
-            // pROJETDataSetLivres
-            // 
-            this.pROJETDataSetLivres.DataSetName = "PROJETDataSetLivres";
-            this.pROJETDataSetLivres.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button2
             // 
@@ -117,11 +109,12 @@
             this.button2.TabIndex = 20;
             this.button2.Text = "Ajouter un nouveau livre";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(190, 84);
+            this.label4.Location = new System.Drawing.Point(138, 82);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(16, 17);
             this.label4.TabIndex = 22;
@@ -129,7 +122,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(130, 84);
+            this.textBox1.Location = new System.Drawing.Point(78, 82);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(54, 22);
             this.textBox1.TabIndex = 23;
@@ -143,9 +136,9 @@
             "bon état",
             "état correct",
             "mauvais état"});
-            this.comboBoxEtat.Location = new System.Drawing.Point(130, 123);
+            this.comboBoxEtat.Location = new System.Drawing.Point(78, 121);
             this.comboBoxEtat.Name = "comboBoxEtat";
-            this.comboBoxEtat.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxEtat.Size = new System.Drawing.Size(117, 24);
             this.comboBoxEtat.TabIndex = 33;
             this.comboBoxEtat.SelectedIndexChanged += new System.EventHandler(this.comboBoxEtat_SelectedIndexChanged);
             // 
@@ -178,22 +171,8 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nouvelle vente";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(39, 33);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(249, 17);
-            this.label5.TabIndex = 36;
-            this.label5.Text = "Si votre livre n\'est pas listé, ajoutez le.";
-            // 
-            // livresTableAdapter1
-            // 
-            this.livresTableAdapter1.ClearBeforeFill = true;
-            // 
             // comboBox2
             // 
-            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.livresBindingSource, "id_livre", true));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "disponible",
@@ -203,6 +182,34 @@
             this.comboBox2.Size = new System.Drawing.Size(121, 24);
             this.comboBox2.TabIndex = 34;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(39, 33);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(249, 17);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "Si votre livre n\'est pas listé, ajoutez le.";
+            // 
+            // pROJETDataSetLivreColl
+            // 
+            this.pROJETDataSetLivreColl.DataSetName = "PROJETDataSetLivreColl";
+            this.pROJETDataSetLivreColl.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pROJETDataSetLivreCollBindingSource
+            // 
+            this.pROJETDataSetLivreCollBindingSource.DataSource = this.pROJETDataSetLivreColl;
+            this.pROJETDataSetLivreCollBindingSource.Position = 0;
+            // 
+            // livresBindingSource
+            // 
+            this.livresBindingSource.DataMember = "Livres";
+            this.livresBindingSource.DataSource = this.pROJETDataSetLivreCollBindingSource;
+            // 
+            // livresTableAdapter
+            // 
+            this.livresTableAdapter.ClearBeforeFill = true;
             // 
             // FormVente
             // 
@@ -215,10 +222,11 @@
             this.Name = "FormVente";
             this.Text = "Vendre un livre";
             this.Load += new System.EventHandler(this.FormVente_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.livresBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pROJETDataSetLivres)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pROJETDataSetLivreColl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pROJETDataSetLivreCollBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.livresBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,9 +248,10 @@
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
-        private PROJETDataSetLivres pROJETDataSetLivres;
-        private System.Windows.Forms.BindingSource livresBindingSource;
-        private PROJETDataSetLivresTableAdapters.LivresTableAdapter livresTableAdapter1;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.BindingSource pROJETDataSetLivreCollBindingSource;
+        private PROJETDataSetLivreColl pROJETDataSetLivreColl;
+        private System.Windows.Forms.BindingSource livresBindingSource;
+        private PROJETDataSetLivreCollTableAdapters.LivresTableAdapter livresTableAdapter;
     }
 }

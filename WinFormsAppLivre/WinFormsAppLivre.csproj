@@ -127,10 +127,10 @@
     </Compile>
     <Compile Include="LoginInfo.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="PROJETDataSetLivres.Designer.cs">
+    <Compile Include="PROJETDataSetLivreColl.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>PROJETDataSetLivres.xsd</DependentUpon>
+      <DependentUpon>PROJETDataSetLivreColl.xsd</DependentUpon>
     </Compile>
     <Compile Include="PROJETDataSetPays.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -179,16 +179,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="PROJETDataSetLivres.xsc">
-      <DependentUpon>PROJETDataSetLivres.xsd</DependentUpon>
+    <None Include="PROJETDataSetLivreColl.xsc">
+      <DependentUpon>PROJETDataSetLivreColl.xsd</DependentUpon>
     </None>
-    <None Include="PROJETDataSetLivres.xsd">
+    <None Include="PROJETDataSetLivreColl.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PROJETDataSetLivres.Designer.cs</LastGenOutput>
+      <LastGenOutput>PROJETDataSetLivreColl.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="PROJETDataSetLivres.xss">
-      <DependentUpon>PROJETDataSetLivres.xsd</DependentUpon>
+    <None Include="PROJETDataSetLivreColl.xss">
+      <DependentUpon>PROJETDataSetLivreColl.xsd</DependentUpon>
     </None>
     <None Include="PROJETDataSetPays.xsc">
       <DependentUpon>PROJETDataSetPays.xsd</DependentUpon>
