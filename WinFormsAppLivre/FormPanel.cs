@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,8 +21,12 @@ namespace WinFormsAppLivre
 
         private void FormPanel_Load(object sender, EventArgs e)
         {
+
             labelWlcm.Text = "Bienvenue "+LoginInfo.username+" !";
+            
+            
         }
+
         public static FormPanel Panel
         {
             get
@@ -76,6 +81,26 @@ namespace WinFormsAppLivre
             DialogResult res = MessageBox.Show("Etes-vous sur de vouloir supprimer votre compte ?");
 
        
+
+        }
+
+        private void btnSolde_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection sqlCon = new SqlConnection(LoginInfo.connectionString))
+                {
+                    sqlCon.Open();
+                    using (SqlCommand command = new SqlCommand("SELECT porte_monnais from Users WHERE id_user = @idUser", sqlCon))
+                    {
+                        command.Parameters.AddWithValue("idUser", LoginInfo.idUser);
+                        btnSolde.Text = "Votre solde : "+command.ExecuteScalar().ToString()+" €";
+                    }
+                }
+            }
+            catch (Exception)
+            {
+            }
 
         }
     }
