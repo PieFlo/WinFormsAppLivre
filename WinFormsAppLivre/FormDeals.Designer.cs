@@ -60,6 +60,15 @@
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpBoxAchats = new System.Windows.Forms.GroupBox();
             this.btnFiAchats = new System.Windows.Forms.Button();
+            this.gbAchatFin = new System.Windows.Forms.GroupBox();
+            this.dgvAchatsFin = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvAchatsValide = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,6 +82,15 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.grpBoxVentes = new System.Windows.Forms.GroupBox();
             this.btnFiVentes = new System.Windows.Forms.Button();
+            this.gbfinal = new System.Windows.Forms.GroupBox();
+            this.dgvVentesFin = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dgvVentesValide = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -84,40 +102,23 @@
             this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.gbAchatFin = new System.Windows.Forms.GroupBox();
-            this.dgvAchatsFin = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gbfinal = new System.Windows.Forms.GroupBox();
-            this.dgvVentesFin = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentesDemande)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAchatsDemande)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentesDispo)).BeginInit();
             this.grpBoxAchats.SuspendLayout();
+            this.gbAchatFin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAchatsFin)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAchatsValide)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.grpBoxVentes.SuspendLayout();
+            this.gbfinal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVentesFin)).BeginInit();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentesValide)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.gbAchatFin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAchatsFin)).BeginInit();
-            this.gbfinal.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvVentesFin)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvVentesDemande
@@ -134,10 +135,11 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
             this.dgvVentesDemande.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvVentesDemande.Location = new System.Drawing.Point(3, 18);
+            this.dgvVentesDemande.Location = new System.Drawing.Point(2, 15);
+            this.dgvVentesDemande.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvVentesDemande.Name = "dgvVentesDemande";
             this.dgvVentesDemande.RowTemplate.Height = 24;
-            this.dgvVentesDemande.Size = new System.Drawing.Size(564, 105);
+            this.dgvVentesDemande.Size = new System.Drawing.Size(424, 85);
             this.dgvVentesDemande.TabIndex = 11;
             this.dgvVentesDemande.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVentes_CellContentClick);
             // 
@@ -208,10 +210,11 @@
             this.idVente,
             this.idLivre});
             this.dgvAchatsDemande.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvAchatsDemande.Location = new System.Drawing.Point(3, 18);
+            this.dgvAchatsDemande.Location = new System.Drawing.Point(2, 16);
+            this.dgvAchatsDemande.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvAchatsDemande.Name = "dgvAchatsDemande";
             this.dgvAchatsDemande.RowTemplate.Height = 24;
-            this.dgvAchatsDemande.Size = new System.Drawing.Size(564, 105);
+            this.dgvAchatsDemande.Size = new System.Drawing.Size(424, 84);
             this.dgvAchatsDemande.TabIndex = 10;
             this.dgvAchatsDemande.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAchats_CellContentClick);
             // 
@@ -264,32 +267,47 @@
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(446, 12);
+            this.btnReturn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(43)))));
+            this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReturn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnReturn.Location = new System.Drawing.Point(335, 21);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(146, 60);
+            this.btnReturn.Size = new System.Drawing.Size(110, 49);
             this.btnReturn.TabIndex = 9;
             this.btnReturn.Text = "Retour";
-            this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.UseVisualStyleBackColor = false;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // btnMesVentes
             // 
-            this.btnMesVentes.Location = new System.Drawing.Point(164, 12);
+            this.btnMesVentes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(43)))));
+            this.btnMesVentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMesVentes.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMesVentes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMesVentes.Location = new System.Drawing.Point(125, 21);
+            this.btnMesVentes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMesVentes.Name = "btnMesVentes";
-            this.btnMesVentes.Size = new System.Drawing.Size(146, 60);
+            this.btnMesVentes.Size = new System.Drawing.Size(110, 49);
             this.btnMesVentes.TabIndex = 8;
             this.btnMesVentes.Text = "Charger mes ventes";
-            this.btnMesVentes.UseVisualStyleBackColor = true;
+            this.btnMesVentes.UseVisualStyleBackColor = false;
             this.btnMesVentes.Click += new System.EventHandler(this.btnMesVentes_Click);
             // 
             // btnMesAchats
             // 
-            this.btnMesAchats.Location = new System.Drawing.Point(12, 12);
+            this.btnMesAchats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(43)))));
+            this.btnMesAchats.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMesAchats.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMesAchats.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMesAchats.Location = new System.Drawing.Point(11, 21);
+            this.btnMesAchats.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMesAchats.Name = "btnMesAchats";
-            this.btnMesAchats.Size = new System.Drawing.Size(146, 60);
+            this.btnMesAchats.Size = new System.Drawing.Size(110, 49);
             this.btnMesAchats.TabIndex = 7;
             this.btnMesAchats.Text = "Charger mes achats";
-            this.btnMesAchats.UseVisualStyleBackColor = true;
+            this.btnMesAchats.UseVisualStyleBackColor = false;
             this.btnMesAchats.Click += new System.EventHandler(this.btnMesAchats_Click);
             // 
             // dgvVentesDispo
@@ -304,10 +322,11 @@
             this.dataGridViewTextBoxColumn12,
             this.dataGridViewTextBoxColumn13});
             this.dgvVentesDispo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvVentesDispo.Location = new System.Drawing.Point(3, 18);
+            this.dgvVentesDispo.Location = new System.Drawing.Point(2, 15);
+            this.dgvVentesDispo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvVentesDispo.Name = "dgvVentesDispo";
             this.dgvVentesDispo.RowTemplate.Height = 24;
-            this.dgvVentesDispo.Size = new System.Drawing.Size(564, 105);
+            this.dgvVentesDispo.Size = new System.Drawing.Size(424, 85);
             this.dgvVentesDispo.TabIndex = 12;
             this.dgvVentesDispo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVentesDispo_CellContentClick);
             // 
@@ -359,29 +378,111 @@
             this.grpBoxAchats.Controls.Add(this.gbAchatFin);
             this.grpBoxAchats.Controls.Add(this.groupBox2);
             this.grpBoxAchats.Controls.Add(this.groupBox1);
-            this.grpBoxAchats.Location = new System.Drawing.Point(9, 105);
+            this.grpBoxAchats.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpBoxAchats.Location = new System.Drawing.Point(7, 85);
+            this.grpBoxAchats.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpBoxAchats.Name = "grpBoxAchats";
-            this.grpBoxAchats.Size = new System.Drawing.Size(580, 522);
+            this.grpBoxAchats.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpBoxAchats.Size = new System.Drawing.Size(435, 452);
             this.grpBoxAchats.TabIndex = 13;
             this.grpBoxAchats.TabStop = false;
             this.grpBoxAchats.Text = "Achats";
             // 
             // btnFiAchats
             // 
-            this.btnFiAchats.Location = new System.Drawing.Point(12, 285);
+            this.btnFiAchats.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnFiAchats.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFiAchats.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiAchats.Location = new System.Drawing.Point(16, 349);
+            this.btnFiAchats.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnFiAchats.Name = "btnFiAchats";
-            this.btnFiAchats.Size = new System.Drawing.Size(146, 60);
+            this.btnFiAchats.Size = new System.Drawing.Size(110, 49);
             this.btnFiAchats.TabIndex = 13;
             this.btnFiAchats.Text = "Afficher les achats finalisés";
-            this.btnFiAchats.UseVisualStyleBackColor = true;
+            this.btnFiAchats.UseVisualStyleBackColor = false;
             this.btnFiAchats.Click += new System.EventHandler(this.btnFiAchats_Click);
+            // 
+            // gbAchatFin
+            // 
+            this.gbAchatFin.Controls.Add(this.dgvAchatsFin);
+            this.gbAchatFin.Location = new System.Drawing.Point(7, 232);
+            this.gbAchatFin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbAchatFin.Name = "gbAchatFin";
+            this.gbAchatFin.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbAchatFin.Size = new System.Drawing.Size(428, 102);
+            this.gbAchatFin.TabIndex = 13;
+            this.gbAchatFin.TabStop = false;
+            this.gbAchatFin.Text = "finalisés";
+            // 
+            // dgvAchatsFin
+            // 
+            this.dgvAchatsFin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAchatsFin.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn19,
+            this.dataGridViewTextBoxColumn28,
+            this.dataGridViewTextBoxColumn29,
+            this.dataGridViewTextBoxColumn30});
+            this.dgvAchatsFin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvAchatsFin.Location = new System.Drawing.Point(2, 16);
+            this.dgvAchatsFin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvAchatsFin.Name = "dgvAchatsFin";
+            this.dgvAchatsFin.RowTemplate.Height = 24;
+            this.dgvAchatsFin.Size = new System.Drawing.Size(424, 84);
+            this.dgvAchatsFin.TabIndex = 10;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Livre";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.HeaderText = "Prix";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.HeaderText = "Etat";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.HeaderText = "Vendeur";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.HeaderText = "Etape";
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            this.dataGridViewTextBoxColumn28.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn29
+            // 
+            this.dataGridViewTextBoxColumn29.HeaderText = "IdVente";
+            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
+            this.dataGridViewTextBoxColumn29.ReadOnly = true;
+            this.dataGridViewTextBoxColumn29.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.HeaderText = "IdLivre";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.ReadOnly = true;
+            this.dataGridViewTextBoxColumn30.Visible = false;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dgvAchatsValide);
-            this.groupBox2.Location = new System.Drawing.Point(6, 153);
+            this.groupBox2.Location = new System.Drawing.Point(4, 124);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(570, 126);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(428, 102);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "validé";
@@ -399,10 +500,11 @@
             this.idVvente,
             this.dataGridViewTextBoxColumn20});
             this.dgvAchatsValide.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvAchatsValide.Location = new System.Drawing.Point(3, 18);
+            this.dgvAchatsValide.Location = new System.Drawing.Point(2, 16);
+            this.dgvAchatsValide.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvAchatsValide.Name = "dgvAchatsValide";
             this.dgvAchatsValide.RowTemplate.Height = 24;
-            this.dgvAchatsValide.Size = new System.Drawing.Size(564, 105);
+            this.dgvAchatsValide.Size = new System.Drawing.Size(424, 84);
             this.dgvAchatsValide.TabIndex = 10;
             this.dgvAchatsValide.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAchatsValide_CellContentClick);
             // 
@@ -456,9 +558,11 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dgvAchatsDemande);
-            this.groupBox1.Location = new System.Drawing.Point(6, 21);
+            this.groupBox1.Location = new System.Drawing.Point(4, 17);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(570, 126);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(428, 102);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "en attente de validation";
@@ -470,29 +574,107 @@
             this.grpBoxVentes.Controls.Add(this.groupBox5);
             this.grpBoxVentes.Controls.Add(this.groupBox3);
             this.grpBoxVentes.Controls.Add(this.groupBox4);
-            this.grpBoxVentes.Location = new System.Drawing.Point(9, 115);
+            this.grpBoxVentes.Location = new System.Drawing.Point(7, 93);
+            this.grpBoxVentes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpBoxVentes.Name = "grpBoxVentes";
-            this.grpBoxVentes.Size = new System.Drawing.Size(583, 551);
+            this.grpBoxVentes.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpBoxVentes.Size = new System.Drawing.Size(437, 448);
             this.grpBoxVentes.TabIndex = 14;
             this.grpBoxVentes.TabStop = false;
             this.grpBoxVentes.Text = "Ventes";
             // 
             // btnFiVentes
             // 
-            this.btnFiVentes.Location = new System.Drawing.Point(21, 420);
+            this.btnFiVentes.Location = new System.Drawing.Point(16, 341);
+            this.btnFiVentes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnFiVentes.Name = "btnFiVentes";
-            this.btnFiVentes.Size = new System.Drawing.Size(146, 60);
+            this.btnFiVentes.Size = new System.Drawing.Size(110, 49);
             this.btnFiVentes.TabIndex = 16;
             this.btnFiVentes.Text = "Afficher les ventes finalisées";
             this.btnFiVentes.UseVisualStyleBackColor = true;
             this.btnFiVentes.Click += new System.EventHandler(this.btnFiVentes_Click);
             // 
+            // gbfinal
+            // 
+            this.gbfinal.Controls.Add(this.dgvVentesFin);
+            this.gbfinal.Location = new System.Drawing.Point(5, 339);
+            this.gbfinal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbfinal.Name = "gbfinal";
+            this.gbfinal.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbfinal.Size = new System.Drawing.Size(428, 102);
+            this.gbfinal.TabIndex = 17;
+            this.gbfinal.TabStop = false;
+            this.gbfinal.Text = "finalisées";
+            // 
+            // dgvVentesFin
+            // 
+            this.dgvVentesFin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvVentesFin.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn31,
+            this.dataGridViewTextBoxColumn32,
+            this.dataGridViewTextBoxColumn33,
+            this.dataGridViewTextBoxColumn34,
+            this.dataGridViewTextBoxColumn35,
+            this.dataGridViewTextBoxColumn36,
+            this.dataGridViewTextBoxColumn37});
+            this.dgvVentesFin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvVentesFin.Location = new System.Drawing.Point(2, 15);
+            this.dgvVentesFin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvVentesFin.Name = "dgvVentesFin";
+            this.dgvVentesFin.RowTemplate.Height = 24;
+            this.dgvVentesFin.Size = new System.Drawing.Size(424, 85);
+            this.dgvVentesFin.TabIndex = 12;
+            // 
+            // dataGridViewTextBoxColumn31
+            // 
+            this.dataGridViewTextBoxColumn31.HeaderText = "Livre";
+            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
+            // 
+            // dataGridViewTextBoxColumn32
+            // 
+            this.dataGridViewTextBoxColumn32.HeaderText = "Prix";
+            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
+            this.dataGridViewTextBoxColumn32.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn33
+            // 
+            this.dataGridViewTextBoxColumn33.HeaderText = "Etat";
+            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            this.dataGridViewTextBoxColumn33.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn34
+            // 
+            this.dataGridViewTextBoxColumn34.HeaderText = "Acheteur";
+            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
+            // 
+            // dataGridViewTextBoxColumn35
+            // 
+            this.dataGridViewTextBoxColumn35.HeaderText = "Etape";
+            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
+            this.dataGridViewTextBoxColumn35.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn36
+            // 
+            this.dataGridViewTextBoxColumn36.HeaderText = "IdVente";
+            this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
+            this.dataGridViewTextBoxColumn36.ReadOnly = true;
+            this.dataGridViewTextBoxColumn36.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn37
+            // 
+            this.dataGridViewTextBoxColumn37.HeaderText = "IdLivre";
+            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
+            this.dataGridViewTextBoxColumn37.ReadOnly = true;
+            this.dataGridViewTextBoxColumn37.Visible = false;
+            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.dgvVentesValide);
-            this.groupBox5.Location = new System.Drawing.Point(6, 285);
+            this.groupBox5.Location = new System.Drawing.Point(4, 232);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(570, 126);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Size = new System.Drawing.Size(428, 102);
             this.groupBox5.TabIndex = 15;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "En attente de reception par l\'acheteur";
@@ -509,10 +691,11 @@
             this.dataGridViewTextBoxColumn26,
             this.dataGridViewTextBoxColumn27});
             this.dgvVentesValide.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvVentesValide.Location = new System.Drawing.Point(3, 18);
+            this.dgvVentesValide.Location = new System.Drawing.Point(2, 15);
+            this.dgvVentesValide.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvVentesValide.Name = "dgvVentesValide";
             this.dgvVentesValide.RowTemplate.Height = 24;
-            this.dgvVentesValide.Size = new System.Drawing.Size(564, 105);
+            this.dgvVentesValide.Size = new System.Drawing.Size(424, 85);
             this.dgvVentesValide.TabIndex = 12;
             // 
             // dataGridViewTextBoxColumn21
@@ -560,9 +743,11 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.dgvVentesDemande);
-            this.groupBox3.Location = new System.Drawing.Point(6, 153);
+            this.groupBox3.Location = new System.Drawing.Point(4, 124);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(570, 126);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Size = new System.Drawing.Size(428, 102);
             this.groupBox3.TabIndex = 14;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "à valider";
@@ -570,163 +755,36 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.dgvVentesDispo);
-            this.groupBox4.Location = new System.Drawing.Point(6, 21);
+            this.groupBox4.Location = new System.Drawing.Point(4, 17);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(570, 126);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Size = new System.Drawing.Size(428, 102);
             this.groupBox4.TabIndex = 13;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "disponible à la vente";
             // 
-            // gbAchatFin
+            // panel2
             // 
-            this.gbAchatFin.Controls.Add(this.dgvAchatsFin);
-            this.gbAchatFin.Location = new System.Drawing.Point(9, 285);
-            this.gbAchatFin.Name = "gbAchatFin";
-            this.gbAchatFin.Size = new System.Drawing.Size(570, 126);
-            this.gbAchatFin.TabIndex = 13;
-            this.gbAchatFin.TabStop = false;
-            this.gbAchatFin.Text = "finalisés";
-            // 
-            // dgvAchatsFin
-            // 
-            this.dgvAchatsFin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAchatsFin.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn19,
-            this.dataGridViewTextBoxColumn28,
-            this.dataGridViewTextBoxColumn29,
-            this.dataGridViewTextBoxColumn30});
-            this.dgvAchatsFin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvAchatsFin.Location = new System.Drawing.Point(3, 18);
-            this.dgvAchatsFin.Name = "dgvAchatsFin";
-            this.dgvAchatsFin.RowTemplate.Height = 24;
-            this.dgvAchatsFin.Size = new System.Drawing.Size(564, 105);
-            this.dgvAchatsFin.TabIndex = 10;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Livre";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.HeaderText = "Prix";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.HeaderText = "Etat";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.HeaderText = "Vendeur";
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.HeaderText = "Etape";
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn29
-            // 
-            this.dataGridViewTextBoxColumn29.HeaderText = "IdVente";
-            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            this.dataGridViewTextBoxColumn29.ReadOnly = true;
-            this.dataGridViewTextBoxColumn29.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn30
-            // 
-            this.dataGridViewTextBoxColumn30.HeaderText = "IdLivre";
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            this.dataGridViewTextBoxColumn30.ReadOnly = true;
-            this.dataGridViewTextBoxColumn30.Visible = false;
-            // 
-            // gbfinal
-            // 
-            this.gbfinal.Controls.Add(this.dgvVentesFin);
-            this.gbfinal.Location = new System.Drawing.Point(7, 417);
-            this.gbfinal.Name = "gbfinal";
-            this.gbfinal.Size = new System.Drawing.Size(570, 126);
-            this.gbfinal.TabIndex = 17;
-            this.gbfinal.TabStop = false;
-            this.gbfinal.Text = "finalisées";
-            // 
-            // dgvVentesFin
-            // 
-            this.dgvVentesFin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVentesFin.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn31,
-            this.dataGridViewTextBoxColumn32,
-            this.dataGridViewTextBoxColumn33,
-            this.dataGridViewTextBoxColumn34,
-            this.dataGridViewTextBoxColumn35,
-            this.dataGridViewTextBoxColumn36,
-            this.dataGridViewTextBoxColumn37});
-            this.dgvVentesFin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvVentesFin.Location = new System.Drawing.Point(3, 18);
-            this.dgvVentesFin.Name = "dgvVentesFin";
-            this.dgvVentesFin.RowTemplate.Height = 24;
-            this.dgvVentesFin.Size = new System.Drawing.Size(564, 105);
-            this.dgvVentesFin.TabIndex = 12;
-            // 
-            // dataGridViewTextBoxColumn31
-            // 
-            this.dataGridViewTextBoxColumn31.HeaderText = "Livre";
-            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
-            // 
-            // dataGridViewTextBoxColumn32
-            // 
-            this.dataGridViewTextBoxColumn32.HeaderText = "Prix";
-            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
-            this.dataGridViewTextBoxColumn32.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn33
-            // 
-            this.dataGridViewTextBoxColumn33.HeaderText = "Etat";
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            this.dataGridViewTextBoxColumn33.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn34
-            // 
-            this.dataGridViewTextBoxColumn34.HeaderText = "Acheteur";
-            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
-            // 
-            // dataGridViewTextBoxColumn35
-            // 
-            this.dataGridViewTextBoxColumn35.HeaderText = "Etape";
-            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
-            this.dataGridViewTextBoxColumn35.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn36
-            // 
-            this.dataGridViewTextBoxColumn36.HeaderText = "IdVente";
-            this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
-            this.dataGridViewTextBoxColumn36.ReadOnly = true;
-            this.dataGridViewTextBoxColumn36.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn37
-            // 
-            this.dataGridViewTextBoxColumn37.HeaderText = "IdLivre";
-            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
-            this.dataGridViewTextBoxColumn37.ReadOnly = true;
-            this.dataGridViewTextBoxColumn37.Visible = false;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(18)))), ((int)(((byte)(27)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(456, 16);
+            this.panel2.TabIndex = 39;
             // 
             // FormDeals
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(608, 665);
+            this.ClientSize = new System.Drawing.Size(456, 540);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnMesVentes);
             this.Controls.Add(this.btnMesAchats);
             this.Controls.Add(this.grpBoxAchats);
             this.Controls.Add(this.grpBoxVentes);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormDeals";
             this.Text = "Mes deals";
             this.Load += new System.EventHandler(this.FormDeals_Load);
@@ -734,18 +792,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvAchatsDemande)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentesDispo)).EndInit();
             this.grpBoxAchats.ResumeLayout(false);
+            this.gbAchatFin.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAchatsFin)).EndInit();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAchatsValide)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.grpBoxVentes.ResumeLayout(false);
+            this.gbfinal.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVentesFin)).EndInit();
             this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentesValide)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
-            this.gbAchatFin.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAchatsFin)).EndInit();
-            this.gbfinal.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvVentesFin)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -826,5 +884,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn35;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn36;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
+        private System.Windows.Forms.Panel panel2;
     }
 }

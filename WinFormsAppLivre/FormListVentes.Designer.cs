@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnReturn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.livre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prix = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.etat = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,11 +36,15 @@
             this.acheter = new System.Windows.Forms.DataGridViewButtonColumn();
             this.idVente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnReturn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(43)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.livre,
@@ -52,31 +54,13 @@
             this.acheter,
             this.idVente,
             this.idLivre});
-            this.dataGridView1.Location = new System.Drawing.Point(22, 86);
+            this.dataGridView1.Location = new System.Drawing.Point(16, 70);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(729, 222);
+            this.dataGridView1.Size = new System.Drawing.Size(547, 180);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // btnReturn
-            // 
-            this.btnReturn.Location = new System.Drawing.Point(583, 12);
-            this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(168, 58);
-            this.btnReturn.TabIndex = 1;
-            this.btnReturn.Text = "Retour";
-            this.btnReturn.UseVisualStyleBackColor = true;
-            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(409, 17);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Veuillez faire votre choix parmi les offres des autres utilisateurs.";
             // 
             // livre
             // 
@@ -117,14 +101,50 @@
             this.idLivre.ReadOnly = true;
             this.idLivre.Visible = false;
             // 
+            // btnReturn
+            // 
+            this.btnReturn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(43)))));
+            this.btnReturn.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnReturn.Location = new System.Drawing.Point(437, 10);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(126, 47);
+            this.btnReturn.TabIndex = 1;
+            this.btnReturn.Text = "Retour";
+            this.btnReturn.UseVisualStyleBackColor = false;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(16, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(380, 17);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Veuillez faire votre choix parmi les offres des autres utilisateurs.";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(18)))), ((int)(((byte)(27)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(581, 16);
+            this.panel2.TabIndex = 40;
+            // 
             // FormListVentes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 331);
+            this.ClientSize = new System.Drawing.Size(581, 269);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormListVentes";
             this.Text = "Acheter un livre";
             this.Load += new System.EventHandler(this.FormListVentes_Load);
@@ -146,5 +166,6 @@
         private System.Windows.Forms.DataGridViewButtonColumn acheter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idVente;
         private System.Windows.Forms.DataGridViewTextBoxColumn idLivre;
+        private System.Windows.Forms.Panel panel2;
     }
 }
