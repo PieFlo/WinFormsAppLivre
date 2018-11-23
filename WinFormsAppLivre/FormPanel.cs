@@ -79,11 +79,23 @@ namespace WinFormsAppLivre
         private void btnDelUser_Click(object sender, EventArgs e)
         {
             DialogResult res = MessageBox.Show("Etes-vous sur de vouloir supprimer votre compte ?");
+            try
+            {
+                using (SqlConnection sqlCon = new SqlConnection(LoginInfo.connectionString))
+                {
+                    sqlCon.Open();
+                    using (SqlCommand command = new SqlCommand("DELETE FROM users WHERE id_user = @idUser", sqlCon))
+                    {
 
-       
+                    }
 
+                }
+
+            }
+            catch (Exception)
+            {
+            }
         }
-
         private void btnSolde_Click(object sender, EventArgs e)
         {
             try
