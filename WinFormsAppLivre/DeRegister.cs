@@ -40,7 +40,7 @@ namespace WinFormsAppLivre
                 SqlDataReader myReader;
                 myConn.Open();
                 myReader = SelectCommand.ExecuteReader();
-                MessageBox.Show("Compte supprimé : (");
+                MessageBox.Show("Compte supprimé !");
             }
         }
     }

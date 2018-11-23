@@ -46,9 +46,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(263, 129);
+            this.button1.Location = new System.Drawing.Point(245, 209);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 31);
+            this.button1.Size = new System.Drawing.Size(105, 40);
             this.button1.TabIndex = 0;
             this.button1.Text = "Valider";
             this.button1.UseVisualStyleBackColor = false;
@@ -60,14 +60,14 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(508, 16);
+            this.panel2.Size = new System.Drawing.Size(622, 16);
             this.panel2.TabIndex = 41;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(239, 94);
+            this.textBox1.Location = new System.Drawing.Point(191, 160);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 20);
+            this.textBox1.Size = new System.Drawing.Size(205, 20);
             this.textBox1.TabIndex = 42;
             // 
             // panel3
@@ -105,7 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(508, 275);
+            this.ClientSize = new System.Drawing.Size(622, 327);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel2);

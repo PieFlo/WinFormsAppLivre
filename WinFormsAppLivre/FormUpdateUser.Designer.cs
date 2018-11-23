@@ -67,12 +67,12 @@
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSubmit.Location = new System.Drawing.Point(232, 332);
-            this.btnSubmit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSubmit.Location = new System.Drawing.Point(208, 324);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(2);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(77, 30);
+            this.btnSubmit.Size = new System.Drawing.Size(97, 37);
             this.btnSubmit.TabIndex = 17;
-            this.btnSubmit.Text = "valider";
+            this.btnSubmit.Text = "Enregistrer";
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
@@ -125,7 +125,7 @@
             // 
             this.txtConfirmPwd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmPwd.Location = new System.Drawing.Point(394, 67);
-            this.txtConfirmPwd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtConfirmPwd.Margin = new System.Windows.Forms.Padding(2);
             this.txtConfirmPwd.Name = "txtConfirmPwd";
             this.txtConfirmPwd.Size = new System.Drawing.Size(110, 29);
             this.txtConfirmPwd.TabIndex = 12;
@@ -135,7 +135,7 @@
             // 
             this.txtPwd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPwd.Location = new System.Drawing.Point(394, 34);
-            this.txtPwd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPwd.Margin = new System.Windows.Forms.Padding(2);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.PasswordChar = '*';
             this.txtPwd.Size = new System.Drawing.Size(110, 29);
@@ -146,7 +146,7 @@
             // 
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(127, 67);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(110, 29);
             this.txtEmail.TabIndex = 10;
@@ -166,7 +166,7 @@
             // 
             this.txtNom.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNom.Location = new System.Drawing.Point(127, 180);
-            this.txtNom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNom.Margin = new System.Windows.Forms.Padding(2);
             this.txtNom.Name = "txtNom";
             this.txtNom.Size = new System.Drawing.Size(110, 29);
             this.txtNom.TabIndex = 18;
@@ -186,7 +186,7 @@
             // 
             this.txtPrenom.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrenom.Location = new System.Drawing.Point(127, 213);
-            this.txtPrenom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrenom.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrenom.Name = "txtPrenom";
             this.txtPrenom.Size = new System.Drawing.Size(110, 29);
             this.txtPrenom.TabIndex = 20;
@@ -218,7 +218,7 @@
             // 
             this.txtAdresse.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAdresse.Location = new System.Drawing.Point(334, 213);
-            this.txtAdresse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAdresse.Margin = new System.Windows.Forms.Padding(2);
             this.txtAdresse.Name = "txtAdresse";
             this.txtAdresse.Size = new System.Drawing.Size(110, 29);
             this.txtAdresse.TabIndex = 24;
@@ -227,7 +227,7 @@
             // 
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(127, 34);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(110, 29);
             this.txtUsername.TabIndex = 9;
@@ -249,7 +249,7 @@
             this.cbBoxVille.DisplayMember = "nom_ville";
             this.cbBoxVille.FormattingEnabled = true;
             this.cbBoxVille.Location = new System.Drawing.Point(334, 180);
-            this.cbBoxVille.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbBoxVille.Margin = new System.Windows.Forms.Padding(2);
             this.cbBoxVille.Name = "cbBoxVille";
             this.cbBoxVille.Size = new System.Drawing.Size(110, 21);
             this.cbBoxVille.TabIndex = 27;
@@ -289,7 +289,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(242, 259);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(185, 20);
             this.dateTimePicker1.TabIndex = 30;
@@ -300,14 +300,14 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(526, 16);
+            this.panel2.Size = new System.Drawing.Size(531, 16);
             this.panel2.TabIndex = 42;
             // 
             // FormUpdateUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(526, 396);
+            this.ClientSize = new System.Drawing.Size(531, 396);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label8);
@@ -328,7 +328,7 @@
             this.Controls.Add(this.txtPwd);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtUsername);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormUpdateUser";
             this.Text = "FormUpdateUser";
             this.Load += new System.EventHandler(this.FormUpdateUser_Load);

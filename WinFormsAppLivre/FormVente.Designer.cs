@@ -58,7 +58,7 @@
             this.button1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(43, 161);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(158, 31);
             this.button1.TabIndex = 17;
@@ -103,7 +103,7 @@
             this.comboBox1.DisplayMember = "titre";
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(58, 32);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(143, 25);
             this.comboBox1.TabIndex = 19;
@@ -130,7 +130,7 @@
             this.button2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Location = new System.Drawing.Point(303, 25);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(179, 37);
             this.button2.TabIndex = 20;
@@ -151,7 +151,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(58, 67);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(42, 23);
             this.textBox1.TabIndex = 23;
@@ -166,7 +166,7 @@
             "état correct",
             "mauvais état"});
             this.comboBoxEtat.Location = new System.Drawing.Point(58, 98);
-            this.comboBoxEtat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxEtat.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEtat.Name = "comboBoxEtat";
             this.comboBoxEtat.Size = new System.Drawing.Size(89, 25);
             this.comboBoxEtat.TabIndex = 33;
@@ -179,7 +179,7 @@
             this.btnReturn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnReturn.Location = new System.Drawing.Point(548, 11);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(126, 47);
             this.btnReturn.TabIndex = 34;
@@ -201,10 +201,10 @@
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(60, 86);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(520, 256);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(556, 269);
             this.groupBox1.TabIndex = 35;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nouvelle vente";
@@ -216,7 +216,7 @@
             "disponible",
             "indisponible"});
             this.comboBox2.Location = new System.Drawing.Point(212, 115);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(92, 25);
             this.comboBox2.TabIndex = 34;
@@ -245,7 +245,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnReturn);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormVente";
             this.Text = "Vendre un livre";
             this.Load += new System.EventHandler(this.FormVente_Load);
