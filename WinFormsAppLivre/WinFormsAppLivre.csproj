@@ -51,6 +51,9 @@
     </StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>C:\Users\jawad\Desktop\MySql.Data.DLL</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -71,6 +74,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DeRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeRegister.Designer.cs">
+      <DependentUpon>DeRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAchat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +152,9 @@
       <DependentUpon>PROJETDataSetVilles.xsd</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DeRegister.resx">
+      <DependentUpon>DeRegister.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAchat.resx">
       <DependentUpon>FormAchat.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,6 +254,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
